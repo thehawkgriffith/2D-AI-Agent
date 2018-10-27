@@ -1,5 +1,7 @@
 # 2-Dimensional Artificial Intelligence Reinforcement Learning Agent
-
+import numpy as np
+from time import sleep
+from os import system
 # State class for a state object
 class State():
     
@@ -40,6 +42,9 @@ def displayMap(state):
     print(Maprow1)
     print(Maprow2)
     print(Maprow3)
+    sleep(0.2)
+    system('clear')
+
 
 # Check if terminal state has been reached
 def checkTermination(state):
